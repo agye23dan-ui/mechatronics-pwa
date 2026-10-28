@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mechatronics Technician Study</title>
+<meta name="description" content="Offline study app for the Mechatronics trade: 20 modules, diagrams, quizzes, flashcards, glossary and formulas.">
+<meta name="theme-color" content="#1d2430">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="icons/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/diagram.css">
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/" aria-label="Mechatronics Technician home">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="16" r="14" class="b-ring"/><path d="M9 21V11l7 6 7-6v10" class="b-m"/></svg>
+      <span>Mechatronics</span>
+    </a>
+    <nav class="dnav" aria-label="Main">
+      <a href="#/" data-nav="home">Modules</a>
+      <a href="#/cards" data-nav="cards">Flashcards</a>
+      <a href="#/exam" data-nav="exam">Exam</a>
+      <a href="#/glossary" data-nav="glossary">Glossary</a>
+      <a href="#/formulas" data-nav="formulas">Formulas</a>
+      <a href="#/progress" data-nav="progress">Progress</a>
+    </nav>
+    <form class="srch" id="srch" role="search">
+      <label class="sr" for="q">Search lessons, terms and formulas</label>
+      <input id="q" type="search" placeholder="Search" autocomplete="off" enterkeyhint="search">
+    </form>
+    <button class="ibtn" id="theme" type="button" aria-label="Change theme">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c-5 1-10-4-9-9z" class="ic"/></svg>
+    </button>
+  </div>
+</header>
+<main id="app" aria-live="polite"><p class="load">Loading…</p></main>
+<nav class="bnav" aria-label="Main">
+  <a href="#/" data-nav="home"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" class="ic"/><rect x="14" y="3" width="7" height="7" class="ic"/><rect x="3" y="14" width="7" height="7" class="ic"/><rect x="14" y="14" width="7" height="7" class="ic"/></svg><span>Modules</span></a>
+  <a href="#/cards" data-nav="cards"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="12" rx="2" class="ic"/><path d="M7 3h13a1 1 0 0 1 1 1v12" class="ic"/></svg><span>Cards</span></a>
+  <a href="#/exam" data-nav="exam"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18H5z M9 8h6 M9 12h6 M9 16h4" class="ic"/></svg><span>Exam</span></a>
+  <a href="#/glossary" data-nav="glossary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z M8 8h7" class="ic"/></svg><span>Terms</span></a>
+  <a href="#/progress" data-nav="progress"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10 M10 20V4 M16 20v-7 M22 20H2" class="ic"/></svg><span>Progress</span></a>
+</nav>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="js/registry.js"></script>
+<script src="data/m01.js"></script><script src="data/m02.js"></script><script src="data/m03.js"></script><script src="data/m04.js"></script><script src="data/m05.js"></script>
+<script src="data/m06.js"></script><script src="data/m07.js"></script><script src="data/m08.js"></script><script src="data/m09.js"></script><script src="data/m10.js"></script>
+<script src="data/m11.js"></script><script src="data/m12.js"></script><script src="data/m13.js"></script><script src="data/m14.js"></script><script src="data/m15.js"></script>
+<script src="data/m16.js"></script><script src="data/m17.js"></script><script src="data/m18.js"></script><script src="data/m19.js"></script><script src="data/m20.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
