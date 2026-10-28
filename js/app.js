@@ -238,7 +238,7 @@
   }
   function moduleQuiz(id) {
     var m = BY[id];
-    startQuiz({ title: m.title + ' quiz', list: shuffle(m.quiz).map(function (q) { return { mod: m, q: q }; }), feedback: true, kind: 'module', modId: id });
+    startQuiz({ title: m.title + ' quiz', list: shuffle(m.quiz).slice(0, 20).map(function (q) { return { mod: m, q: q }; }), feedback: true, kind: 'module', modId: id });
   }
   function mistakesQuiz() {
     var list = [];

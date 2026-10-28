@@ -1,5 +1,5 @@
 /* Mechatronics study app service worker: offline-first, versioned cache. */
-var VERSION = 'mech-v1';
+var VERSION = 'mech-v2';
 var ASSETS = [
   "./",
   "index.html",
@@ -7,6 +7,7 @@ var ASSETS = [
   "css/app.css",
   "css/diagram.css",
   "js/registry.js",
+  "js/bank.js",
   "js/app.js",
   "icons/icon-192.png",
   "icons/icon-512.png",
@@ -37,7 +38,7 @@ var ASSETS = [
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(VERSION).then(function (c) {
-    return Promise.all(ASSETS.map(function (a) { return c.add(a).catch(function () { /* skip missing */ }); }));
+    return Promise.all(ASSETS.map(function (a) { return c.add(new Request(a, { cache: 'reload' })).catch(function () { /* skip missing */ }); }));
   }).then(function () { return self.skipWaiting(); }));
 });
 
